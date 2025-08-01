@@ -193,6 +193,36 @@ public class MapStudentExample {
 			
 		}
 		
+		// highest Salary  get  and Display
+		
+		Student  topSalary=null;
+		
+		
+		for(Integer key:student.keySet())
+		{
+		Student s	=student.get(key);
+		
+		
+		if(topSalary==null ||  s.getSalary()>topSalary.getSalary()) {
+			
+			topSalary=s;
+			
+		}
+			
+			
+			
+			
+		}
+		
+		
+		System.out.println("Student with Dislay  highest Salary ");
+		
+		System.out.println(topSalary);
+		
+		
+		
+		
+		
 		
 
 	}
