@@ -1,5 +1,6 @@
 package java12;
 
+import java.util.Collection;
 import java.util.Hashtable;
 import java.util.Map;
 
@@ -96,6 +97,10 @@ public class MapStudentExample {
 		
 		Map<Integer ,Student> student = new  Hashtable<>();
 		
+        System.out.println("check hashTable is Empty "+student.isEmpty());
+
+		
+		
 		student.put(101, new Student(101, "Ranjit", "maneranji01@gmail.com", "Dubai",9000));
 		
 		student.put(102, new Student(102, "Reena", "raveena02@gmail.com", "Iran", 45000)  );
@@ -169,9 +174,24 @@ public class MapStudentExample {
 		
 		
 		
+              
+              
+              System.out.println("check hashTable is Empty "+student.isEmpty());
+              
+              
+              System.out.println("check hashtable is size:"+student.size());
 		
 		
+		Collection<Student>  allStudents=student.values();
 		
+		
+		for(Student s:allStudents) {
+			
+			System.out.println(s);
+			
+			
+			
+		}
 		
 		
 
